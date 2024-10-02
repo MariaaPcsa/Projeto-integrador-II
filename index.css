@@ -1,0 +1,231 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #B3E5FC;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+header p {
+    font-size: 1.25rem;
+}
+
+
+.list-group:hover {
+    background-color: #78909C;
+    
+}
+
+
+.banner {
+    border-radius: 0.25rem;
+    
+        background-image: url('./img/image\ 6.jpg'); /* Substitua pela URL da imagem */
+        /* background-size: cover; */
+        background-position: center;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        position: relative;
+      
+   
+        
+    }
+    .banner::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        
+    }
+    
+    .banner h2 {
+        position: relative;
+        font-size: 2.5em;
+        z-index: 1;
+        margin: 0;
+    }
+    
+    .banner p {
+        position: relative;
+        font-size: 1.2em;
+        z-index: 1;
+    }
+
+/* Alinha o conteúdo do menu à esquerda */
+nav {
+    text-align: left;
+    color: #333;
+    
+}
+/* Garante que a barra lateral esteja totalmente à esquerda e fixa */
+nav .list-group {
+    width: 100%; /* Preenche a coluna de 3 partes do grid (col-md-3) */
+}
+
+/* Estilo para os links */
+.list-group-item {
+    font-weight: bold;
+    color: #333;
+    margin: 10px;
+   border: radius 2rem;
+}
+
+/* Mudança de cor ao passar o mouse */
+.list-group-item:hover {
+background-color:  #333;
+    color: #007bff;
+}
+
+/* Ajuste para o conteúdo principal */
+.col-md-9 {
+    padding-left: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;}
+
+.footer.div {
+    position: relative;
+    width: 100%;
+    background-color: #B3E5FC;
+    
+}
+.footer{
+    background-color: #B3E5FC;
+}
+.list-group-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Media Queries */
+@media (max-width: 375px) and (max-width: 768px) {
+    .sidebar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .banner {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 380px;
+    overflow: hidden;
+    
+  }
+  
+  .slides{
+    width: 400%;
+    height: 380px;
+    display: flex;
+  
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 600px;
+  }
+  
+  .manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #005f73;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  .manual-btn.manual-btn:hover{
+    background-color: white;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first{
+    margin-left: -25%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -50%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -75%;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  }
+  
+  .navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+  }
+  #radio2:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+  }
+  #radio3:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+  }
+  #radio4:checked ~ .navigation-auto .auto-btn1{
+    background-color:white;
+  }
