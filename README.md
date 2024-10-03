@@ -1,2 +1,2 @@
 # Projeto-integrador-II
-Mentaltec
+Mentaltech

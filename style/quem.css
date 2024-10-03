@@ -1,3 +1,4 @@
+
 body {
     display: flex;
     flex-direction: column;
@@ -25,8 +26,9 @@ header p {
 .banner {
     border-radius: 0.25rem;
     
-        background-image: url('./img/image\ 6.jpg'); /* Substitua pela URL da imagem */
+        background-image: url('/img/image\ 6.jpg'); /* Substitua pela URL da imagem */
         /* background-size: cover; */
+        
         background-position: center;
         height: 400px;
         display: flex;
@@ -130,104 +132,74 @@ h1, h2, h3 {
         font-size: 1rem;
     }
 }
-/* Carrousel 
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 380px;
-    overflow: hidden;
-    
-  }
-  
-  .slides{
-    width: 400%;
-    height: 380px;
+
+/* Equpe*/
+
+.equipe {
     display: flex;
-  
-  }
-  
-  .slides input{
-    display: none;
-  }
-  
-  .slide{
-    width: 25%;
-    position: relative;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 600px;
-  }
-  
-  .manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .manual-btn{
-    border: 2px solid #005f73;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .manual-btn:not(:last-child){
-    margin-right: 40px;
-  }
-  .manual-btn.manual-btn:hover{
-    background-color: white;
-  }
-  
-  #radio1:checked ~ .first{
-    margin-left: 0;
-  }
-  #radio2:checked ~ .first{
-    margin-left: -25%;
-  }
-  
-  #radio3:checked ~ .first{
-    margin-left: -50%;
-  }
-  
-  #radio4:checked ~ .first{
-    margin-left: -75%;
-  }
-  
-  .navigation-auto div{
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-  }
-  
-  .navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
+}
+
+.membro {
+    text-align: center;
+    margin:50 px;
+    width: 200px; 
+    min-height: 300px; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
     justify-content: center; 
-  }
-  
-  .navigation-auto div:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  #radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: white;
-  }
-  #radio2:checked ~ .navigation-auto .auto-btn1{
-    background-color: white;
-  }
-  #radio3:checked ~ .navigation-auto .auto-btn1{
-    background-color: white;
-  }
-  #radio4:checked ~ .navigation-auto .auto-btn1{
-    background-color:white;
-  }
-    */
+}
+
+
+.membro img {
+    width: auto; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .equipe {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+
+    .membro {
+        flex: 0 0 auto;
+        width: 200px; 
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .membro img {
+        width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        border-radius: 50%; 
+        max-width: 100%; 
+        height: 200px; 
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) and (max-height: 750px) {
+    
+
+    .membro {
+        height: calc(100hv);
+        position: relative;
+        /* display: grid;
+        grid-template-columns: 3fr repeat(2,1fr)  ;
+      */
+
+    }
+
+ 
