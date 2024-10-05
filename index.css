@@ -15,11 +15,15 @@ header p {
     font-size: 1.25rem;
 }
 
-
-.list-group:hover {
-    /* background-color: #78909C; */
-    
+hr{
+  width: 100%;
+  border: 2px solid black;
+ 
 }
+
+/*.list-group:hover {
+    /* background-color: #78909C;    
+}*/
 
 
 .banner {
