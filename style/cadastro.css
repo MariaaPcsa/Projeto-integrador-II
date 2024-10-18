@@ -26,9 +26,8 @@ select {
 
 /* Botão de envio */
 input[type="submit"] {
-    background-color: #5491B0;
     border: none;
-    color: white;
+    color: black;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -40,5 +39,80 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #5491B0;
+    background-color: #ccc;
+    font-weight: bold;
+}
+input[type="reset"]:hover {
+    background-color: #ccc;
+    
+}
+
+
+
+button {
+    background-color: #ddd; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    padding: 12px 24px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mudar o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+    margin-top: 20px; /* Margem superior */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
+
+.Ouvir {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #B3E5FC; /* Fundo suave */
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 10px 0;
+}
+
+.Ouvir {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    background-color: #B3E5FC; /* Fundo suave */
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 10px 0;
+    margin-left: auto; /* Move o container para a margem direita da tela */
+    width: fit-content; /* Ajusta a largura conforme o conteúdo */
+}
+
+.Ouvir img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o botão */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.Ouvir img:hover {
+    transform: scale(1.2); /* Aumenta levemente o ícone ao passar o mouse */
+}
+
+.Ouvir button {
+    background-color: #ddd; /* Cor de fundo do botão */
+    color: black; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animações suaves */
+}
+
+.Ouvir button:hover {
+    background-color: #0057b369; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+.Ouvir button:active {
+    background-color: #004494; /* Cor de fundo ao clicar */
 }

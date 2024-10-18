@@ -89,3 +89,45 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 });
+
+//botão ouvir
+let speech = null;
+let isPaused = false;
+
+function leitorDeTexto() {
+  if (speechSynthesis.speaking && !isPaused) {
+    speechSynthesis.pause();
+    isPaused = true;
+  } else if (isPaused) {
+    speechSynthesis.resume();
+    isPaused = false;
+  } else {
+    const text = document.body.innerText;
+    speech = new SpeechSynthesisUtterance(text);
+    speech.lang = "pt-BR";
+
+    speech.onend = () => {
+      isPaused = false;
+    };
+
+    speechSynthesis.speak(speech);
+  }
+}
+
+function verificarFimDaPagina() {
+  // Verifica se o usuário chegou ao final da página
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    if (speechSynthesis.speaking) {
+      // Pausa ou para a leitura ao chegar no final da página
+      speechSynthesis.pause();
+      isPaused = true;
+    }
+  }
+}
+
+// Configura o evento de rolagem para verificar quando chega ao final da página
+window.addEventListener("scroll", verificarFimDaPagina);
+
+// Configura o evento de clique no botão para iniciar a leitura
+document.getElementById("botaoLeitor").addEventListener("click", leitorDeTexto);
+// 3. Adicione o evento ao botão "Parar":
