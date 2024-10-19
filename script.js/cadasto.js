@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const tamanhosDeFonte = {
     "fonte-pequena": "0.8em",
     "fonte-media": "1em",
-    "fonte-grande": "2em"
+    "fonte-grande": "1.9em"
   };
 
   // Função para alterar a cor de fundo da página
@@ -150,7 +150,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.style.backgroundColor = ""; // Volta à cor padrão
     document.body.style.fontSize = "1em"; // Volta ao tamanho de fonte padrão
   }
-
   // Adiciona o evento 'change' ao select
   document.getElementById("selecione").addEventListener("change", function() {
     const valorSelecionado = this.value;
