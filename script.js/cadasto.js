@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //botão ouvir
+
 let speech = null;
 let isPaused = false;
 
@@ -124,6 +125,45 @@ function verificarFimDaPagina() {
     }
   }
 }
+// Acessibilidade fonte/cor
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Mapeamento de tamanhos de fonte
+  const tamanhosDeFonte = {
+    "fonte-pequena": "0.8em",
+    "fonte-media": "1em",
+    "fonte-grande": "2em"
+  };
+
+  // Função para alterar a cor de fundo da página
+  function alterarCorDaPagina() {
+    document.body.style.backgroundColor = "#ddd"; // Exemplo de cor de fundo
+  }
+
+  // Função para alterar o tamanho da fonte da página
+  function alterarFonte(tamanho) {
+    document.body.style.fontSize = tamanho;
+  }
+
+  // Função para resetar as configurações para o padrão
+  function resetarConfiguracoes() {
+    document.body.style.backgroundColor = ""; // Volta à cor padrão
+    document.body.style.fontSize = "1em"; // Volta ao tamanho de fonte padrão
+  }
+
+  // Adiciona o evento 'change' ao select
+  document.getElementById("selecione").addEventListener("change", function() {
+    const valorSelecionado = this.value;
+
+    if (valorSelecionado === "cor") {
+      alterarCorDaPagina();
+    } else if (valorSelecionado in tamanhosDeFonte) {
+      alterarFonte(tamanhosDeFonte[valorSelecionado]);
+    } else if (valorSelecionado === "reset") {
+      resetarConfiguracoes();
+    }
+  });
+});
 
 // Configura o evento de rolagem para verificar quando chega ao final da página
 window.addEventListener("scroll", verificarFimDaPagina);

@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="../style/musica.css">
+    <link rel="stylesheet" href="../style/cadastro.css">
+
 </head>
 <body class="container">
 
@@ -15,17 +18,40 @@
         <h1>Mentaltech</h1>
         <p>Seu abraço virtual</p>
         <h2>Música & Filmes</h2> 
+        
+            <div class="Ouvir">
+        
+                <button onclick="leitorDeTexto()"> <img src="../img/volume-high-outline.svg" alt=""><span>Ouvir esta página</span></button>
+            
+                <div class="acessibilidade">
+                    <label for="selecione">Acessibilidade</label>
+                    <select name="GrupoSelect" id="selecione">
+                        <option value="" disabled selected>Escolha uma opção:</option>
+                        <option value="cor">Alterar Cor Da Página</option>
+                        <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+                        <option value="fonte-media">Tamanho de Fonte Médio</option>
+                        <option value="fonte-grande">Tamanho de Fonte Grande</option>
+                        <option value="reset">Voltar ao Padrão</option>
+                    </select>
+                </div>
+              </div>
     </header>
     <hr>
+
+
+
+
+
     <div class="row">
         <!-- Menu lateral -->
         <nav class="col-md-3 mb-4">
             <div class="list-group">
                
                 <a href="/index.html" class="list-group-item list-group-item-action">Home</a>
-                <a href="/pages/apoio.html" class="list-group-item list-group-item-action">Recursos de Apoio</a>
+                <a href="/pages/apoio.html" class="list-group-item list-group-item-action">Saiba mais</a>
                 <a href="/pages/depoimentos.html" class="list-group-item list-group-item-action">Depoimentos</a>
-                <a href="/pages/musica.html" class="list-group-item list-group-item-action">Músicas & Filmes</a>
+                <a href="/pages/musica.html" class="list-group-item list-group-item-action">
+                    Entretenimento</a>
                 <a href="/pages/faq.html" class="list-group-item list-group-item-action">FAQ</a>
                 <a href="/pages/quem.html" class="list-group-item list-group-item-action">Quem Somos</a>
                 <a href="/pages/cadastro.html" class="list-group-item list-group-item-action">Cadastro</a>
@@ -33,21 +59,237 @@
         </nav>
 
         <!-- Conteúdo principal -->
+
+
+
         <main class="col-md-9">
-            <section class="">
+
+        
+
+            <div class="textos">
+                    
+                <h2>Importância da Música e dos Filmes para a Saúde Mental </h2><br>
+            <p id="textos">A música e o cinema desempenham um papel importante na saúde mental, oferecendo distração, conforto e compreensão. Músicas com ritmos lentos, como "Weightless" de Marconi Union e sons lofi, ajudam a reduzir a ansiedade e promover relaxamento, desacelerando a frequência cardíaca e induzindo calma.</p>
+
+                <p>Filmes e documentários sobre saúde mental ajudam a desestigmatizar transtornos, proporcionando identificação e compreensão das emoções. Além de serem ferramentas de autoajuda, eles incentivam a empatia, a conexão emocional e a busca por apoio profissional.</p>
+                
+                <p>Esses recursos acessíveis podem criar um ambiente acolhedor e informativo, ajudando os visitantes a relaxar, aprender e se conectar com suas emoções.</p>
+            </div>
+               <br><br>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <h2 class="titulos">Músicas</h2> -->
+         
+
+            <section class="conteudo">
+                <h2 class="titulos-seção">Músicas</h2>
+                Aqui você encontrará algumas músicas que podem ajudar você a relaxar. 
+                <br><b>Clique nas imagens para ouvir as músicas no Youtube</b><br><br>
+
+
+
+
+
+                    <!-- ok -->
+                <div class="gallery-music">
+                    <div class="card">
+                        <a href="https://www.youtube.com/watch?v=tDHOoq4bxvQ" target="_blank">
+                            <img src="../img/imgMusica/fone1.jpeg" alt="Imagem de um fone de ouvido estilo headset cinza, com fundo em tons vibrantes e notas musicais coloridas saindo dos fones.">
+                        </a>
+                        <p>Marconi Union - Weightless</p>
+                    </div>
+                
+                    
+                
+                    <div class="card">
+                
+                    <a  href="https://www.youtube.com/watch?v=wsNc35fkkdw" target="_blank">
+                        <img src="../img/imgMusica/fone2.jpeg" alt="Imagem de um fone de ouvido estilo headset cinza, com fundo em tons vibrantes e notas musicais coloridas saindo dos fones.">
+                      </a> 
+                       <p>Ondas Binaurais</p>
+                    </div>
+                
+
+                    <div class="card">
+                    <a href="https://www.youtube.com/watch?v=PV4rJkTngBo" target="_blank">
+                        <img src="../img/imgMusica/fone3.jpeg" alt="Imagem de um fone de ouvido estilo headset cinza, com fundo em tons vibrantes e notas musicais coloridas saindo dos fones.">
+                       </a> 
+                       <p>Música Lo-fi</p>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://youtu.be/PRAGLqfNK1o" target="_blank">
+                            <img src="../img/imgMusica/fone7.jpeg" alt="Imagem de um fone de ouvido estilo headset cinza, com fundo em tons vibrantes e notas musicais coloridas saindo dos fones.">
+                           </a> 
+                           <p>Música ambiente Sweet Bossa Nova Jazz Music</p>
+                        </div>
+
+                        <div class="card">
+                            <a href="https://youtu.be/Dho_VqAAJC8" target="_blank">
+                                <img src="../img/imgMusica/fone2.jpeg" alt="Imagem de um fone de ouvido estilo headset cinza, com fundo em tons vibrantes e notas musicais coloridas saindo dos fones.">
+                               </a> 
+                               <p>Sons da Natureza </p>
+                            
+                            </div>
+
+                            <div class="card">
+                                <a href="https://youtu.be/ROW9DiPsL98" target="_blank">
+                                    <img src="../img/imgMusica/fone3.jpeg" alt="Imagem de um fone de ouvido estilo headset cinza, com fundo em tons vibrantes e notas musicais coloridas saindo dos fones.">
+                                   </a> 
+                                   <p>Sons da Natureza Para Dormir</p>
+                                </div>
+
+                                <div class="card">
+                                    <a href="https://youtu.be/NSKxvLWqyOY" target="_blank">
+                                        <img src="../img/imgMusica/fone7.jpeg" alt="Imagem de um fone de ouvido estilo headset cinza, com fundo em tons vibrantes e notas musicais coloridas saindo dos fones.">
+                                       </a> 
+                                       <p>Seeds of Growth - Malte Marten</p>
+                                    </div>
+
+                                    <!-- ok -->
+                                    <div class="card">
+                                        <a href="https://youtu.be/HzXsq_oiguw" target="_blank">
+                                            <img src="../img/imgMusica/fone1.jpeg" alt="Imagem de um fone de ouvido estilo headset cinza, com fundo em tons vibrantes e notas musicais coloridas saindo dos fones.">
+                                           </a> 
+                                           <p>Som de chuva</p>
+                                        </div>
+
+                                    
+                                        <div class="card">
+                                            <a href="https://youtu.be/uD2NxGtDztI" target="_blank">
+                                                <img src="../img/imgMusica/fone2.jpeg" alt="Imagem de um fone de ouvido estilo headset cinza, com fundo em tons vibrantes e notas musicais coloridas saindo dos fones.">
+                                               </a> 
+                                               <p> Música Lo-fi Positiva </p>
+                                            </div>
+
+
+                                            <div class="card">
+                                                <a href="https://youtu.be/2OEL4P1Rz04" target="_blank">
+                                                    <img src="../img/imgMusica/fone3.jpeg" alt="Imagem de um fone de ouvido estilo headset cinza, com fundo em tons vibrantes e notas musicais coloridas saindo dos fones.">
+                                                   </a> 
+                                                   <p> Música Ambiente Relaxante </p>
+                                                </div>
+    
+
+
+
+
+                </section>
+
+
+<br>
+
+
+
+
+
+
 
                 
-<div class="textos">
-    
-    <p id="textos"></p>
-</div>
-               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <hr>
+
+            <section class="conteudo">
+                <h2 class="titulos-seção">Sugestões de Filmes</h2>
+                <div class="">
+                    <p>A seção de filmes irá conter informações sobre filmes que ajudam na compreensão e reflexão sobre saúde mental.</p>
+                </div>
             </section>
-            <h2></h2>
-         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <hr>
+
+            <section class="conteudo">
+
+                <h2 class="titulos-seção">Podcasts</h2>
+                <div class="textos1">
+                    <p>A seção de podcasts irá destacar programas que discutem saúde mental e bem-estar.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="conteudo">
+                <h2 class="titulos-seção">Livros</h2>
+                <div class="textos1">
+                    <p>A seção de livros irá sugerir leituras que abordam temas relacionados à saúde mental.</p>
+                </div>
+            </section>
+
+
             
         </main>
+        
     </div>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Rodapé -->
     <footer class="footer mt-auto py-3 text-center">
@@ -55,9 +297,9 @@
             <p>&copy; Copyright Mentaltech © 2024 | Todos os direitos reservados.</p>
         </div>
     </footer>
-    <!--<script src="/index.js"></script>
+    <script src="../script.js/cadasto.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
--->
+
 </body>
 </html>

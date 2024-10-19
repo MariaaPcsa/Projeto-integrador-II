@@ -19,21 +19,23 @@
         <h1>Mentaltech</h1>
         <p>Seu abraço virtual</p>
         <h2>Cadastro</h2> 
+        
+        
+         <!--Acessibilidade  -->
         <div class="Ouvir">
-    
-            <img src="../img/volume-high-outline.svg" alt="">
-            
-            <button onclick="leitorDeTexto()">Ouvir esta página</button>
+        
+            <button onclick="leitorDeTexto()"> <img src="../img/volume-high-outline.svg" alt=""><span>Ouvir esta página</span></button>
         
             <div class="acessibilidade">
-                <label for="selecione">.</label>
-                <select name="GrupoSelect" id="selecione" required aria-label="Selecione o tipo de usuário">
-                    <option value="" disabled selected>acessibilidade...</option>
-                    <option onclick="AlterarCorDaPagina()">Alterar Cor Da Pagina</option>
-                    <option onclick="AlterarFonte()">Alterar Fonte</option>
-                
+                <label for="selecione">Acessibilidade</label>
+                <select name="GrupoSelect" id="selecione">
+                    <option value="" disabled selected>Escolha uma opção:</option>
+                    <option value="cor">Alterar Cor Da Página</option>
+                    <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+                    <option value="fonte-media">Tamanho de Fonte Médio</option>
+                    <option value="fonte-grande">Tamanho de Fonte Grande</option>
+                    <option value="reset">Voltar ao Padrão</option>
                 </select>
-                
             </div>
           </div>
     </header>
@@ -44,9 +46,10 @@
             <div class="list-group">
                
                 <a href="/index.html" class="list-group-item list-group-item-action">Home</a>
-                <a href="/pages/apoio.html" class="list-group-item list-group-item-action">Recursos de Apoio</a>
+                <a href="/pages/apoio.html" class="list-group-item list-group-item-action">Saiba mais</a>
                 <a href="/pages/depoimentos.html" class="list-group-item list-group-item-action">Depoimentos</a>
-                <a href="/pages/musica.html" class="list-group-item list-group-item-action">Músicas & Filmes</a>
+                <a href="/pages/musica.html" class="list-group-item list-group-item-action">
+                    Entretenimento</a>
                 <a href="/pages/faq.html" class="list-group-item list-group-item-action">FAQ</a>
                 <a href="/pages/quem.html" class="list-group-item list-group-item-action">Quem Somos</a>
                 <a href="/pages/cadastro.html" class="list-group-item list-group-item-action">Cadastro</a>
@@ -170,8 +173,9 @@
                                 <path d="M8 11a.5.5 0 0 0 .5-.5V6.707l1.146 1.147a.5.5 0 0 0 .708-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L7.5 6.707V10.5a.5.5 0 0 0 .5.5"/>
                                 <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1"/>
                               </svg>
-                        
-                        <input type="submit" value="Enviar" id="enviar">
+                              
+
+                        <input type="submit" value ="Enviar"  id="enviar ">
                     
                     </div>
                     </form>
