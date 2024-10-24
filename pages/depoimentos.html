@@ -61,13 +61,25 @@
    
 </div>
                
-            </section>
-            <h2></h2>
-            <p>Depoimentos de Superação</p>
-         
-            
-        </main>
-    </div>
+<form action=" lista"></form>
+    
+<div id="container">
+    <h1>Depoimentos</h1>
+    <br>
+    <p>Utilize este espaço caso queira deixar uma mensagem de conforto para as pessoas que estão passando por problemas psicológicos. Esta mensagem poderá ser selecionada para aparecer na página inicial.</p>
+    <br>
+    <label for="checkbox" required>Concordo que a minha mensagem seja exibida na pagina inicial deste site.</label>
+<input type="checkbox" name="" id="checkbox">
+    <input type="text" id="taskInput" placeholder="Digite seu comentário" />
+    <button onclick="addTask()" id="Click1">Adicionar</button>
+    <ul id="taskList"></ul>
+    <button onclick="enviarMensagem()" id="Click1">Enviar comentário</button>
+    
+</div>
+</form>
+
+</div> 
+<script src="../js/depoimento.js"></script>
 
     <!-- Rodapé -->
     <footer class="footer mt-auto py-3 text-center">
