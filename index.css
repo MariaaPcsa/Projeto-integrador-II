@@ -85,13 +85,13 @@ nav .list-group {
     margin-right: 0.2rem;
     border-radius: 0.5rem;
 }
-.container img  {
+/* .container img  {
     width: 100%;
     height: auto;
     margin-top: 1rem;
 margin-bottom:1rem ;
 border-radius: 0.75rem;
-}
+} */
 
 /* Mudança de cor ao passar o mouse */
 .list-group-item:hover {
