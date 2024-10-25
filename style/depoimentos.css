@@ -1,20 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
- 
-  
-  #container {
-    max-width: 600px;
-    margin: 150px auto;
-    padding: 100px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    display: inline-block;
-  }
-  
+
   ul {
     list-style: none;
     padding: 0;
@@ -34,4 +18,10 @@ body {
     padding: 20px;
   
     vertical-align: middle;}
+    
+    #Click1{
+      background-color: #fff;
+      color: black
+    }
+    
     
