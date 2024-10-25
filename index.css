@@ -81,8 +81,9 @@ nav .list-group {
 .list-group-item {
     font-weight: bold;
     color: #333;
-    margin: 10px;
-    border-radius: 0.75rem;
+    margin: 4px;
+    margin-right: 0.2rem;
+    border-radius: 0.5rem;
 }
 .container img  {
     width: 100%;

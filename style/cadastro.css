@@ -20,7 +20,7 @@ select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccb;
     border-radius: 4px;
 }
 
@@ -83,7 +83,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #ddd; /* Fundo suave */
+    background-color: #dbdd; /* Fundo suave */
     padding: 10px;
     border-radius: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
