@@ -16,15 +16,14 @@
 }
 
 .membro img {
-    width: auto; 
-    height: 200px; 
+    width: 200px; /* Definindo a largura da imagem */
+    height: 200px; /* Definindo a altura da imagem */
     object-fit: cover; 
-    border-radius: 50%;
+    border-radius: 50%; /* Fazendo a imagem redonda */
 }
 
 @media screen and (max-width: 768px) {
     .equipe {
-        display: flex;
         flex-wrap: nowrap;
         justify-content: flex-start;
         padding: 10px;
@@ -41,32 +40,16 @@
     }
 
     .membro img {
-        width: 100%; 
-        height: auto; 
+        width: 200px; /* Manter a largura da imagem */
+        height: 200px; /* Manter a altura da imagem */
         object-fit: cover; 
         border-radius: 50%; 
-        max-width: 100%; 
-        height: 200px; 
     }
 }
-
-
 
 @media only screen and (max-width: 400px) and (max-height: 750px) {
-    
-
     .membro {
-        height: calc(100hv);
+        height: 100vh; /* Corrigido para 100vh */
         position: relative;
-        /* display: grid;
-        grid-template-columns: 3fr repeat(2,1fr)  ;
-      */
-
     }
 }
-
-
-
-
-    
-        
