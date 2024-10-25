@@ -5,46 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentaltech - Seu abraço virtual</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="faq.css">
     <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="../style/cadastro.css">
+    <link rel="stylesheet" href="/style/cadastro.css">
 </head>
 <body class="container">
 
     <!-- Cabeçalho -->
-    <header class="container text-center my-4">
+    <header class="text-center my-4">
         <h1>Mentaltech</h1>
         <p>Seu abraço virtual</p>
-        <h2>FAQ</h2> 
+
+        <div class="Ouvir">
         
-            <div class="Ouvir">
+            <button onclick="leitorDeTexto()"> <img src="../img/volume-high-outline.svg" alt=""><span>Ouvir esta página</span></button>
         
-                <button onclick="leitorDeTexto()"> <img src="../img/volume-high-outline.svg" alt=""><span>Ouvir esta página</span></button>
-            
-                <div class="acessibilidade">
-                    <label for="selecione">Acessibilidade</label>
-                    <select name="GrupoSelect" id="selecione">
-                        <option value="" disabled selected>Escolha uma opção:</option>
-                        <option value="cor">Alterar Cor Da Página</option>
-                        <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
-                        <option value="fonte-media">Tamanho de Fonte Médio</option>
-                        <option value="fonte-grande">Tamanho de Fonte Grande</option>
-                        <option value="reset">Voltar ao Padrão</option>
-                    </select>
-                </div>
-              </div>
+            <div class="acessibilidade">
+                <label for="selecione">Acessibilidade</label>
+                <select name="GrupoSelect" id="selecione">
+                    <option value="" disabled selected>Escolha uma opção:</option>
+                    <option value="cor">Alterar Cor Da Página</option>
+                    <option value="fonte-pequena">Tamanho de Fonte Pequena</option>
+                    <option value="fonte-media">Tamanho de Fonte Médio</option>
+                    <option value="fonte-grande">Tamanho de Fonte Grande</option>
+                    <option value="reset">Voltar ao Padrão</option>
+                </select>
+            </div>
+          </div>
+        <h2>FAQ - Perguntas Frequentes</h2> 
     </header>
     <hr>
+
     <div class="row">
         <!-- Menu lateral -->
         <nav class="col-md-3 mb-4">
             <div class="list-group">
-               
                 <a href="/index.html" class="list-group-item list-group-item-action">Home</a>
                 <a href="/pages/apoio.html" class="list-group-item list-group-item-action">Saiba mais</a>
                 <a href="/pages/depoimentos.html" class="list-group-item list-group-item-action">Depoimentos</a>
-                <a href="/pages/musica.html" class="list-group-item list-group-item-action">
-                    Entretenimento</a>
+                <a href="/pages/musica.html" class="list-group-item list-group-item-action">Entretenimento</a>
                 <a href="/pages/faq.html" class="list-group-item list-group-item-action">FAQ</a>
                 <a href="/pages/quem.html" class="list-group-item list-group-item-action">Quem Somos</a>
                 <a href="/pages/cadastro.html" class="list-group-item list-group-item-action">Cadastro</a>
@@ -53,30 +53,73 @@
 
         <!-- Conteúdo principal -->
         <main class="col-md-9">
-            <section class="">
+            <div class="faq-content">
+                <section>
+                    <h3>1. O que eu posso encontrar neste site?</h3>
+                    <p>Aqui você encontrará conteúdos voltados para ajudar a superar a ansiedade, incluindo dicas práticas, vídeos inspiradores, indicações de filmes e histórias reais de superação.</p>
+                </section>
 
-                
-<div class="textos">
-    
-    <p id="textos">Este ambiente foi desenvolvido com a finalidade de prestar apoio emocional a pessoas que estão enfrentando desafios <br> relacionados a saúde mental, auxiliando assim, o retorno às atividades no mercado de trabalho e sociais pós-pandemia, <br> além de proporcionar um ambiente acolhedor.</p>
-</div>
-               
-            </section>
-          
-         
-            
+                <section>
+                    <h3>2. Como as dicas de superação da ansiedade podem me ajudar?</h3>
+                    <p>Nossas dicas são baseadas em técnicas comprovadas que ajudam a reduzir os sintomas da ansiedade e promovem o bem-estar emocional. Elas incluem desde exercícios de respiração até sugestões de mudança de hábitos e pensamentos.</p>
+                </section>
+
+                <section>
+                    <h3>3. Vocês oferecem acompanhamento profissional para tratar a ansiedade?</h3>
+                    <p>Não oferecemos acompanhamento clínico ou terapia. Nosso conteúdo tem caráter informativo e inspirador. Para tratamento profissional, sugerimos procurar um psicólogo ou psiquiatra.</p>
+                </section>
+
+                <section>
+                    <h3>4. Quais tipos de vídeos inspiradores estão disponíveis?</h3>
+                    <p>Oferecemos vídeos com mensagens de encorajamento, entrevistas com pessoas que superaram a ansiedade e vídeos educativos sobre como lidar com emoções e desafios diários.</p>
+                </section>
+
+                <section>
+                    <h3>5. Vocês recomendam filmes sobre o tema da ansiedade?</h3>
+                    <p>Sim! Temos uma seção dedicada a dicas de filmes que abordam temas relacionados à ansiedade, superação de dificuldades emocionais e crescimento pessoal.</p>
+                </section>
+
+                <section>
+                    <h3>6. As histórias reais são de pessoas conhecidas?</h3>
+                    <p>As histórias que compartilhamos vêm de diversas fontes, incluindo relatos anônimos de visitantes do site, além de histórias de pessoas públicas e autores reconhecidos que lidaram com a ansiedade.</p>
+                </section>
+
+                <section>
+                    <h3>7. Como posso enviar minha história de superação?</h3>
+                    <p>Se você gostaria de compartilhar sua história, pode nos enviar através da página de contato. Nossa equipe revisará e poderá publicar para inspirar outras pessoas que estão passando por desafios semelhantes.</p>
+                </section>
+
+                <section>
+                    <h3>8. Posso compartilhar os conteúdos do site nas redes sociais?</h3>
+                    <p>Sim! Encorajamos que você compartilhe os conteúdos inspiradores que encontrar aqui. Apenas pedimos que dê os devidos créditos ao nosso site.</p>
+                </section>
+
+                <section>
+                    <h3>9. Como posso acompanhar as atualizações de novos conteúdos?</h3>
+                    <p>Você pode se inscrever na nossa newsletter ou seguir nossas redes sociais para ser notificado sobre novos vídeos, dicas de filmes e histórias de superação.</p>
+                </section>
+
+                <section>
+                    <h3>10. Este site pode substituir o tratamento da ansiedade?</h3>
+                    <p>Não. Nossos conteúdos são complementares e têm o objetivo de inspirar e oferecer suporte emocional. Recomendamos sempre buscar ajuda profissional se você estiver passando por ansiedade intensa ou persistente.</p>
+                </section>
+
+                <section>
+                    <h3>11. Quem são os criadores da página?</h3>
+                    <p>Somos oito estudantes do curso de Tecnologia da Informação da Universidade Virtual do Estado de São Paulo (Univesp). Desenvolvemos este site para oferecer informações relevantes e acolhedoras, com o objetivo de ajudar pessoas a se reintegrarem à sociedade após passarem por grandes traumas emocionais.</p>
+                </section>
+            </div>
         </main>
     </div>
 
     <!-- Rodapé -->
     <footer class="footer mt-auto py-3 text-center">
         <div class="container">
-            <p>&copy; Copyright Mentaltech © 2024 | Todos os direitos reservados.</p>
+            <p>&copy; Copyright Mentaltech 2024 | Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src="../script.js/cadasto.js"></script>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 </body>
 </html>

@@ -1,0 +1,51 @@
+/* FAQ */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 24px;
+    color: #34495e;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 12px;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 10px;
+    color: #7f8c8d;
+    margin-bottom: 14px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+}
+
+.list-group-item {
+    font-size: 14px;
+}
+
+.list-group-item:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.faq-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
