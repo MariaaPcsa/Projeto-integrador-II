@@ -67,6 +67,20 @@
 }
 
 
+#pageFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #B3E5FC; /* Pode ajustar conforme o tema da sua página */
+    text-align: center;
+    width: 100%;
+}
 
+#pageFooter .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
     
