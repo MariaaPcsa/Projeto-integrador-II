@@ -44,7 +44,85 @@ O site é composto por várias páginas, incluindo:
 3. Navegue pelas diferentes seções utilizando o menu lateral.
 
 ## Estrutura de Arquivos
-mentaltech/ │ ├── css/ │ ├── index.css │ └── cadastro.css │ ├── img/ │ └── logo1.ico │ ├── pages/ │ ├─ ─ apoio.html │ ├ ── depoimentos.html │ ├── musica.html │ ├── faq.html │ ├── quem.html │ └── cadastro.html │ ├── script.js/ │ └── cadastro.js │ ├── index.html └
+mentaltech/
+│
+├── css/
+│   ├── index.css
+│   └── cadastro.css
+│
+├── img/
+│   └── logo1.ico
+│
+├── pages/
+│   ├── apoio.html
+│   ├── depoimentos.html
+│   ├── musica.html
+│   ├── faq.html
+│   ├── quem.html
+│   └── cadastro.html
+│
+├── script.js/
+│   └── cadastro.js
+│
+└── index.html
+
+
+## Funcionalidades Principais
+
+### 1. Acessibilidade de Interface
+   - **Mudança de Cor e Tamanho da Fonte**: 
+     - O site permite que o usuário ajuste o tamanho da fonte e altere a cor do fundo para melhorar a legibilidade. Há três opções de tamanho de fonte ("pequena", "média" e "grande") e uma opção de cor de fundo padrão.
+   - **Modificação do Footer**: 
+
+   
+     - O rodapé altera sua cor dependendo das opções selecionadas pelo usuário, com um padrão azul claro para opções de fonte e uma cor cinza para a opção de alteração de cor da página.
+
+### 2. Leitor de Texto
+
+   
+   - **Botão de Leitura em Voz**: 
+
+   
+     - Ao clicar no botão "Ouvir", o texto da página é lido em voz alta. O leitor permite pausar e retomar a leitura conforme desejado, proporcionando suporte adicional para acessibilidade.
+   - **Verificação de Rolagem até o Final da Página**: 
+     - Quando o usuário chega ao final da página, o leitor pausa automaticamente, dando ao usuário controle sobre a navegação e leitura.
+
+### 3. Estrutura do Código
+
+  
+   - **HTML e JavaScript**:
+     - O código HTML está estruturado para definir a página, e o JavaScript controla as funcionalidades dinâmicas, incluindo o leitor de texto e ajustes de acessibilidade.
+
+  
+   - **Funções**:
+
+ 
+     - `alteraCorFooter(opcao)`: ajusta a cor do rodapé conforme a seleção do usuário.
+
+ 
+     - `leitorDeTexto()`: controla a leitura em voz alta, permitindo pausar, retomar e iniciar a leitura.
+
+  
+     - `alterarCorDaPagina()`, `alterarFonte(tamanho)` e `resetarConfiguracoes()`: permitem configurar o fundo e o tamanho da fonte da página.
+     - `verificarFimDaPagina()`: verifica se o usuário chegou ao final da página para pausar o leitor de texto.
+
+## Como Usar
+
+
+
+1
+1. **Alterar Configurações**:
+   - Selecione uma opção de acessibilidade para ajustar cor ou tamanho da fonte através do menu "Acessibilidade".
+
+2. **Ouvir o Texto da Página**:
+
+   
+   - Clique no botão de leitura para ouvir o conteúdo em voz alta.
+   - A leitura pausará automaticamente ao chegar no fim da página.
+
+## Dependências
+
+Este projeto usa a API de síntese de fala do navegador para o recurso de leitura em voz alta. Nenhuma dependência adicional é necessária.
 
 ## Licença
 Este projeto está sob a licença **Mentaltech 2024**. Todos os direitos reservados.

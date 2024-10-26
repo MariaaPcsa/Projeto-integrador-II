@@ -222,6 +222,12 @@ filter: drop-shadow(2px 2px 5px rgb(116, 192, 197));
     width: 100%;
 }
 
+.container img  {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+margin-bottom:1rem ;
+}
 #pageFooter .container {
     display: flex;
     justify-content: center;
