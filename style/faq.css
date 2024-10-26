@@ -49,3 +49,18 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+#pageFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #B3E5FC; /* Pode ajustar conforme o tema da sua página */
+    text-align: center;
+    width: 100%;
+}
+
+#pageFooter .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
