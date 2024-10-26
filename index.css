@@ -9,7 +9,16 @@ header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     
+    
 }
+h1{
+    font-family: 'opendyslexic';
+	src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+
+}
+
 
 header p {
     font-size: 1.25rem;
@@ -29,7 +38,7 @@ hr{
 .banner {
     border-radius: 0.25rem;
     
-        background-image: url('./img/image\ 6.jpg'); /* Substitua pela URL da imagem */
+        background-image: url(''); /* Substitua pela URL da imagem */
         /* background-size: cover; */
         background-position: center;
         height: 400px;
@@ -85,13 +94,13 @@ nav .list-group {
     margin-right: 0.2rem;
     border-radius: 0.5rem;
 }
-/* .container img  {
+ #banner {
     width: 100%;
     height: auto;
     margin-top: 1rem;
 margin-bottom:1rem ;
-border-radius: 0.75rem;
-} */
+border-radius: 0.75rem; 
+}
 
 /* Mudança de cor ao passar o mouse */
 .list-group-item:hover {
@@ -106,8 +115,12 @@ background-color:  #333;
 
 h1, h2, h3 {
     color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;}
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 400;
+    font-family: 'opendyslexic';
+	src: url('http://dyslexicfonts.com/fonts/OpenDyslexic-Bold.ttf');
+	font-weight: bold;
+	font-style: normal; }
 
 .footer.div {
 
