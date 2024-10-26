@@ -1,0 +1,152 @@
+form {
+    display: block;
+}
+
+/* Ajustes de layout para os rótulos e campos de entrada */
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="senha"],
+input[type="date"],
+input[type="endereco"],
+input[type="password"],
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccb;
+    border-radius: 4px;
+}
+
+/* Botão de envio */
+input[type="submit"] {
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ccc;
+    font-weight: bold;
+}
+input[type="reset"]:hover {
+    background-color: #ccc;
+    
+}
+
+
+
+button {
+    background-color: #ddd; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    padding: 12px 24px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mudar o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+    margin-top: 20px; /* Margem superior */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
+
+label {
+    display: flex; /* Para alinhar o texto e a imagem no mesmo nível */
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    font-weight: bold; /* Negrito no texto */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+  }
+  
+  label img {
+    margin-right: 8px; /* Espaçamento entre a imagem e o texto */
+    width: 20px; /* Define o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+
+
+/* Acessibilidade */
+.Ouvir {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #dbdd; /* Fundo suave */
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 10px 0;
+}
+
+.Ouvir {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    background-color: #ddd; /* Fundo suave */
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 10px 0;
+    margin-left: auto; /* Move o container para a margem direita da tela */
+    width: fit-content; /* Ajusta a largura conforme o conteúdo */
+}
+
+.Ouvir img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o botão */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.Ouvir img:hover {
+    transform: scale(1.2); /* Aumenta levemente o ícone ao passar o mouse */
+}
+
+.Ouvir button {
+    background-color: #ddd; /* Cor de fundo do botão */
+    color: black; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animações suaves */
+}
+
+.Ouvir button:hover {
+    background-color: #0057b369; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+.Ouvir button:active {
+    background-color: #004494; /* Cor de fundo ao clicar */
+}
+#pageFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #B3E5FC; /* Pode ajustar conforme o tema da sua página */
+    text-align: center;
+    width: 100%;
+}
+
+#pageFooter .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
