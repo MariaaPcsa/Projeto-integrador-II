@@ -8,6 +8,8 @@ body {
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom:1rem ;
     
     
 }
@@ -22,6 +24,8 @@ h1{
 
 header p {
     font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom:1rem ;
 }
 
 hr{
@@ -38,7 +42,7 @@ hr{
 .banner {
     border-radius: 0.25rem;
     
-        background-image: url(''); /* Substitua pela URL da imagem */
+        background-image: url('./img/bane.png'); /* Substitua pela URL da imagem */
         /* background-size: cover; */
         background-position: center;
         height: 400px;
@@ -75,6 +79,13 @@ hr{
         z-index: 1;
     }
 
+    .container img  {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    margin-bottom:1rem ;
+    }
+
 /* Alinha o conteúdo do menu à esquerda */
 nav {
     text-align: left;
@@ -91,15 +102,7 @@ nav .list-group {
     font-weight: bold;
     color: #333;
     margin: 4px;
-    margin-right: 0.2rem;
-    border-radius: 0.5rem;
-}
- #banner {
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
-margin-bottom:1rem ;
-border-radius: 0.75rem; 
+   border-radius: 0.5rem;
 }
 
 /* Mudança de cor ao passar o mouse */
@@ -122,13 +125,19 @@ h1, h2, h3 {
 	font-weight: bold;
 	font-style: normal; }
 
-.footer.div {
+
+
+
+  
+.footer{
 
  margin: 100%;
     position: relative;
     width: 100%;
     background-color: #B3E5FC;
-    
+    align-items: center;
+        
+        
 }
 .footer{
     background-color: #B3E5FC;
@@ -136,6 +145,8 @@ h1, h2, h3 {
 .list-group-item:hover {
     background-color: #f0f0f0;
 }
+
+
 
 
 /* Media Queries */
@@ -149,7 +160,7 @@ h1, h2, h3 {
         padding: 2rem 1rem;
     }
 
-    header h1 {
+    header h1 h2 h3 {
         font-size: 2rem;
     }
 
@@ -158,5 +169,7 @@ h1, h2, h3 {
 
     }
 }
+
+
 
 
