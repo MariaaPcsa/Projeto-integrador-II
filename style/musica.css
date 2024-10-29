@@ -222,11 +222,15 @@ filter: drop-shadow(2px 2px 5px rgb(116, 192, 197));
     width: 100%;
 }
 
-.container img  {
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
-margin-bottom:1rem ;
+/* imagem livord */
+
+#banner{
+  
+    margin-top: 0.5rem;
+margin-bottom:0.5rem;
+width: 50%; /* 50% da largura do contêiner pai */
+height: auto; /* Mantém a proporção */
+
 }
 #pageFooter .container {
     display: flex;
