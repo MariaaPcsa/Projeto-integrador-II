@@ -83,7 +83,15 @@ h1, h2, h3 {
 	font-weight: bold;
 	font-style: normal; }
 
-
+    .depoimento {
+        
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #e0f7fa;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
 
   
