@@ -28,8 +28,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let i = 0; i < requiredFields.length; i++) {
       let field = requiredFields[i];
-      if (field.value === "" || field.value === null) {
-        displayError(field, "Este campo é obrigatório");
+      if (
+        field.value === "" ||
+        field.value === null ||
+        field.value.length < 6
+      ) {
+        displayError(
+          field,
+          "Este campo é obrigatório e tem que ter pelomenos 6 caracter"
+        );
         fieldsValid = false;
       }
     }
