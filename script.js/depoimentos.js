@@ -11,7 +11,8 @@ function addTask() {
     // Adiciona um botão para remover a tarefa
     const removerBotao = document.createElement("button");
     removerBotao.textContent = "Remover";
-    removerBotao.onclick = function () {
+
+    removerBotao.onclick = function() {
       ul.removeChild(li);
     };
 
@@ -22,7 +23,9 @@ function addTask() {
   } else if (input.value == "" && checkbox.checked) {
     alert("Por favor, insira uma tarefa.");
   } else if (!checkbox.checked) {
-    alert("Para enviar um comentário é necessário aceitar que a mensagem seja exibida.");
+    alert(
+      "Para enviar um comentário é necessário aceitar que a mensagem seja exibida."
+    );
   }
 }
 

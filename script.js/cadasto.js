@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const formulario = document.getElementById("cadastro-form");
   formulario.addEventListener("submit", function(event) {
     event.preventDefault();
+    const confirmarEnvio = confirm("Enviar o formulário?");
     resetErrorMessages();
 
     if (!validateAge()) {
@@ -11,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (!validateRequiredFields()) {
       return;
-      ed;
     }
 
     if (!comparePasswords()) {
@@ -19,7 +19,15 @@ document.addEventListener("DOMContentLoaded", function() {
       return;
     }
 
+    if (confirmarEnvio) {
+      this.submit(); // Envia o formulário se o usuário clicar em "OK"
+    } else {
+      // Cancela o envio do formulário se o usuário clicar em "Cancelar"
+      alert("Envio cancelado.");
+    }
     this.submit();
+
+    alert("Formulário enviado com sucesso!");
   });
 
   function validateRequiredFields() {

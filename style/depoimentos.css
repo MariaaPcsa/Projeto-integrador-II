@@ -2,23 +2,20 @@
   ul {
     list-style: none;
     padding: 0;
+
   }
-  
+
+
   button {
-    margin-top: 10px;
-    padding: 20px 20;
-    background-color: #5491B0;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  #logo{
-    width: 200px;
-    padding: 20px;
+    background-color: #ddd; /* Cor de fundo verde */
+    color: black; /* Cor do texto */
+    padding: 12px 24px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    margin-top: 20px; /* Margem superior */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
   
-    vertical-align: middle;}
-    
     #Click1{
       background-color: #fff;
       color: black
@@ -27,6 +24,7 @@
       background-color: #ccc;
         }
         #pageFooter {
+        
           display: flex;
           justify-content: center;
           align-items: center;
@@ -40,4 +38,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
+          margin-top: 5rem;
       }
+   
+      
+   
