@@ -51,7 +51,7 @@ input[type="reset"]:hover {
 
 button {
     background-color: #ddd; /* Cor de fundo verde */
-    color: white; /* Cor do texto */
+    color: black; /* Cor do texto */
     padding: 12px 24px; /* Espaçamento interno */
     font-size: 16px; /* Tamanho da fonte */
     border: none; /* Remover borda */
