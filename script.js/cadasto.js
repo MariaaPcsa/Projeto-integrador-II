@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const formulario = document.getElementById("cadastro-form");
-  formulario.addEventListener("submit", function(event) {
+  formulario.addEventListener("submit", async function(event) {
+    // Corrigido para 'async function'
     event.preventDefault();
     const confirmarEnvio = confirm("Enviar o formulário?");
     resetErrorMessages();
@@ -19,15 +20,52 @@ document.addEventListener("DOMContentLoaded", function() {
       return;
     }
 
-    if (confirmarEnvio) {
-      this.submit(); // Envia o formulário se o usuário clicar em "OK"
-    } else {
-      // Cancela o envio do formulário se o usuário clicar em "Cancelar"
+    if (!confirmarEnvio) {
       alert("Envio cancelado.");
+      return;
+    }
+
+    const senha = document.getElementById("senha").value;
+    const confirmarSenha = document.getElementById("confirmarSenha").value;
+    const nome = document.getElementById("nome").value;
+    const sobrenome = document.getElementById("sobrenome").value;
+    const email = document.getElementById("email").value;
+    const telefone = document.getElementById("telefone").value;
+    const data_nascimento = document.getElementById("data_nascimento").value;
+
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const dados = {
+      nome,
+      sobrenome,
+      email,
+      senha,
+      confirmarSenha,
+      telefone,
+      data_nascimento
+    };
+
+    try {
+      const resposta = await fetch("https://api-mentaltech.onrender.com/user", {
+        method: "POST",
+        headers: myHeaders,
+        body: JSON.stringify(dados),
+        redirect: "follow"
+      });
+
+      if (resposta.ok) {
+        const respostaJson = await resposta.json();
+        alert("Cadastro realizado com sucesso!");
+        console.log(respostaJson);
+      } else {
+        alert("Erro ao cadastrar. Tente novamente.");
+      }
+    } catch (error) {
+      console.error("Erro:", error);
+      alert("Erro ao conectar-se à API.");
     }
     this.submit();
-
-    alert("Formulário enviado com sucesso!");
   });
 
   function validateRequiredFields() {
@@ -43,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
       ) {
         displayError(
           field,
-          "Este campo é obrigatório e tem que ter pelomenos 6 caracter"
+          "Este campo é obrigatório e tem que ter pelo menos 6 caracteres"
         );
         fieldsValid = false;
       }
@@ -55,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function() {
   function comparePasswords() {
     const senha = document.getElementById("senha").value;
     const confirmarSenha = document.getElementById("confirmarSenha").value;
-
     return senha === confirmarSenha;
   }
 
@@ -66,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function resetErrorMessages() {
-    let errorMessages = document.querySelectorAll(".error-message");
+    const errorMessages = document.querySelectorAll(".error-message");
     for (let i = 0; i < errorMessages.length; i++) {
       errorMessages[i].textContent = "";
     }
@@ -104,6 +141,9 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
 });
+
+// acessibilidade
+
 document.getElementById("selecione").addEventListener("change", function() {
   alteraCorFooter(this.value);
 });
